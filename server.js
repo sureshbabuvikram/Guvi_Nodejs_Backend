@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 import userRoutes from './routes/user.js';
-app.get("/",(res,res)=>{
+app.get("/",(req,res)=>{
     res.send("testing")
 })
 app.use('/api/user', userRoutes);
